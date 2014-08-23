@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="5" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://FallingBum.gd" type="Script"></ext_resource>
+	<ext_resource path="res://res/homless.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/fire_particle.png" type="Texture"></ext_resource>
+	<resource type="ConvexPolygonShape2D" path="local://1">
+
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="3"> 			0, -10, 8.66025, 5, -8.66025, 5 </vector2_array>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "names" </string>
+			<string_array  len="94">
+				<string> "RigidBody2D" </string>
+				<string> "_import_path" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/behind_parent" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "layers" </string>
+				<string> "mode" </string>
+				<string> "mass" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "custom_integrator" </string>
+				<string> "continuous_cd" </string>
+				<string> "contacts_reported" </string>
+				<string> "contact_monitor" </string>
+				<string> "active" </string>
+				<string> "can_sleep" </string>
+				<string> "velocity/linear" </string>
+				<string> "velocity/angular" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "fire" </string>
+				<string> "Particles2D" </string>
+				<string> "config/amount" </string>
+				<string> "config/lifetime" </string>
+				<string> "config/time_scale" </string>
+				<string> "config/preprocess" </string>
+				<string> "config/emit_timeout" </string>
+				<string> "config/emitting" </string>
+				<string> "config/offset" </string>
+				<string> "config/half_extents" </string>
+				<string> "config/local_space" </string>
+				<string> "config/explosiveness" </string>
+				<string> "config/flip_h" </string>
+				<string> "config/flip_v" </string>
+				<string> "config/texture" </string>
+				<string> "params/direction" </string>
+				<string> "params/spread" </string>
+				<string> "params/linear_velocity" </string>
+				<string> "params/spin_velocity" </string>
+				<string> "params/orbit_velocity" </string>
+				<string> "params/gravity_direction" </string>
+				<string> "params/gravity_strength" </string>
+				<string> "params/radial_accel" </string>
+				<string> "params/tangential_accel" </string>
+				<string> "params/damping" </string>
+				<string> "params/initial_size" </string>
+				<string> "params/final_size" </string>
+				<string> "params/hue_variation" </string>
+				<string> "randomness/direction" </string>
+				<string> "randomness/spread" </string>
+				<string> "randomness/linear_velocity" </string>
+				<string> "randomness/spin_velocity" </string>
+				<string> "randomness/orbit_velocity" </string>
+				<string> "randomness/gravity_direction" </string>
+				<string> "randomness/gravity_strength" </string>
+				<string> "randomness/radial_accel" </string>
+				<string> "randomness/tangential_accel" </string>
+				<string> "randomness/damping" </string>
+				<string> "randomness/initial_size" </string>
+				<string> "randomness/final_size" </string>
+				<string> "randomness/hue_variation" </string>
+				<string> "color_phases/count" </string>
+				<string> "phase_0/pos" </string>
+				<string> "phase_0/color" </string>
+				<string> "phase_1/pos" </string>
+				<string> "phase_1/color" </string>
+				<string> "phase_2/pos" </string>
+				<string> "phase_2/color" </string>
+				<string> "phase_3/pos" </string>
+				<string> "phase_3/color" </string>
+				<string> "emission_points" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 4 </int>
+			<string> "variants" </string>
+			<array  len="38" shared="false">
+				<node_path> "" </node_path>
+				<bool> True </bool>
+				<real> 1 </real>
+				<bool> False </bool>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<int> 1 </int>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 2.59189, -0, 0, 3.62317, -0.80247, 5.36041 </matrix32>
+				<int> 0 </int>
+				<resource  resource_type="Script" path="res://FallingBum.gd">  </resource>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 1 </int>
+							<string> "sources" </string>
+							<array  len="2" shared="false">
+								<string> "res://FallingBum.gd" </string>
+								<string> "res://new_scene.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "pixel_snap" </string>
+							<bool> False </bool>
+							<string> "zoom" </string>
+							<real> 1.670096 </real>
+							<string> "use_snap" </string>
+							<bool> False </bool>
+							<string> "ofs" </string>
+							<vector2> -230.148, -199.676 </vector2>
+							<string> "snap" </string>
+							<int> 10 </int>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "viewports" </string>
+							<array  len="4" shared="false">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+							</array>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "Script" </string>
+				</dictionary>
+				<real> 0.7 </real>
+				<vector2> -0.401245, 15.4909 </vector2>
+				<int> 30 </int>
+				<real> 2 </real>
+				<real> 0.1 </real>
+				<resource  resource_type="Texture" path="res://res/fire_particle.png">  </resource>
+				<real> 5 </real>
+				<real> 180 </real>
+				<real> 100 </real>
+				<real> 20 </real>
+				<real> 0.6 </real>
+				<real> 0.4 </real>
+				<real> 0.9 </real>
+				<real> 0.2 </real>
+				<int> 3 </int>
+				<color> 1, 0.94902, 0, 1 </color>
+				<real> 0.3 </real>
+				<color> 0.566817, 0.206355, 0.266123, 1 </color>
+				<color> 0, 0, 0, 1 </color>
+				<vector2_array  len="0"> 					 </vector2_array>
+				<resource  resource_type="Texture" path="res://res/homless.png">  </resource>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<vector2> -0.80247, 5.36041 </vector2>
+				<vector2> 2.59189, 3.62317 </vector2>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="254"> 				-1, -1, 0, 0, -1, 27, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 9, 7, 10, 8, 11, 9, 12, 3, 13, 7, 14, 10, 15, 2, 16, 2, 17, 5, 18, 3, 19, 10, 20, 7, 21, 3, 22, 1, 23, 1, 24, 4, 25, 5, 26, 11, 27, 12, 0, 0, 0, 29, 28, -1, 57, 1, 0, 2, 1, 3, 13, 4, 13, 5, 3, 6, 14, 7, 5, 8, 6, 30, 15, 31, 16, 32, 16, 33, 17, 34, 5, 35, 1, 36, 4, 37, 4, 38, 3, 39, 2, 40, 1, 41, 1, 42, 18, 43, 5, 44, 5, 45, 5, 46, 19, 47, 5, 48, 20, 49, 21, 50, 5, 51, 5, 52, 22, 53, 23, 54, 24, 55, 25, 56, 5, 57, 5, 58, 5, 59, 5, 60, 5, 61, 5, 62, 5, 63, 5, 64, 5, 65, 5, 66, 5, 67, 26, 68, 5, 69, 27, 70, 17, 71, 28, 72, 29, 73, 30, 74, 2, 75, 31, 76, 2, 77, 31, 78, 32, 0, 0, 0, 79, 79, -1, 19, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 80, 33, 81, 1, 82, 4, 83, 3, 84, 3, 85, 7, 86, 7, 87, 10, 88, 34, 89, 3, 90, 35, 0, 0, 0, 91, 91, -1, 10, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 36, 7, 5, 8, 37, 92, 8, 93, 3, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
