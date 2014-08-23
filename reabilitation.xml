@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="5" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://spess2.png" type="Texture"></ext_resource>
-	<ext_resource path="res://pipe.png" type="Texture"></ext_resource>
+<resource_file type="PackedScene" subresource_count="4" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://res/reabilitation.png" type="Texture"></ext_resource>
+	<ext_resource path="res://reabilitation.gd" type="Script"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2 name="extents"> 10, 10 </vector2>
 
 	</resource>
-	<resource type="GDScript" path="local://2">
-		<string name="script/source"> "&#10;extends Sprite&#10;&#10;# member variables here, example:&#10;# var a=2&#10;# var b=&quot;textvar&quot;&#10;&#10;func _ready():&#10;&#9;# Initalization here&#10;&#9;set_frame(randi(24*5))&#10;&#9;pass&#10;&#10;&#10;" </string>
-
-	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="38">
-				<string> "Node" </string>
+			<string_array  len="45">
+				<string> "Node2D" </string>
 				<string> "_import_path" </string>
-				<string> "__meta__" </string>
-				<string> "Pipe" </string>
-				<string> "Sprite" </string>
 				<string> "visibility/visible" </string>
 				<string> "visibility/opacity" </string>
 				<string> "visibility/self_opacity" </string>
@@ -27,6 +20,28 @@
 				<string> "transform/pos" </string>
 				<string> "transform/rot" </string>
 				<string> "transform/scale" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "RigidBody2D" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "layers" </string>
+				<string> "mode" </string>
+				<string> "mass" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "custom_integrator" </string>
+				<string> "continuous_cd" </string>
+				<string> "contacts_reported" </string>
+				<string> "contact_monitor" </string>
+				<string> "active" </string>
+				<string> "can_sleep" </string>
+				<string> "velocity/linear" </string>
+				<string> "velocity/angular" </string>
+				<string> "reabilitation" </string>
+				<string> "Sprite" </string>
 				<string> "texture" </string>
 				<string> "centered" </string>
 				<string> "offset" </string>
@@ -38,31 +53,26 @@
 				<string> "modulate" </string>
 				<string> "region" </string>
 				<string> "region_rect" </string>
-				<string> "StaticBody2D" </string>
-				<string> "shape_count" </string>
-				<string> "shapes/0/shape" </string>
-				<string> "shapes/0/transform" </string>
-				<string> "shapes/0/trigger" </string>
-				<string> "layers" </string>
-				<string> "constant_linear_velocity" </string>
-				<string> "constant_angular_velocity" </string>
-				<string> "friction" </string>
-				<string> "bounce" </string>
 				<string> "CollisionShape2D" </string>
 				<string> "shape" </string>
 				<string> "trigger" </string>
-				<string> "Space" </string>
-				<string> "script/script" </string>
 			</string_array>
 			<string> "version" </string>
 			<int> 1 </int>
 			<string> "conn_count" </string>
 			<int> 0 </int>
 			<string> "node_count" </string>
-			<int> 5 </int>
+			<int> 4 </int>
 			<string> "variants" </string>
-			<array  len="21" shared="false">
+			<array  len="19" shared="false">
 				<node_path> "" </node_path>
+				<bool> True </bool>
+				<real> 1 </real>
+				<bool> False </bool>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<resource  resource_type="Script" path="res://reabilitation.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
@@ -72,7 +82,7 @@
 							<int> 0 </int>
 							<string> "sources" </string>
 							<array  len="1" shared="false">
-								<node_path> "/root/EditorNode/@Panel3/@VBoxContainer6/@HSplitContainer8/@VSplitContainer9/@VSplitContainer10/@VBoxContainer11/@Panel16/@Control18/@CanvasItemEditor5771/@Control5727/@Control5728/@Viewport5729/Node/Space" </node_path>
+								<string> "res://reabilitation.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
@@ -80,11 +90,11 @@
 							<string> "pixel_snap" </string>
 							<bool> False </bool>
 							<string> "zoom" </string>
-							<real> 1 </real>
+							<real> 1.507262 </real>
 							<string> "use_snap" </string>
-							<bool> True </bool>
+							<bool> False </bool>
 							<string> "ofs" </string>
-							<vector2> -450.352, -177.982 </vector2>
+							<vector2> -372.802, -190.613 </vector2>
 							<string> "snap" </string>
 							<int> 64 </int>
 						</dictionary>
@@ -175,28 +185,19 @@
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
 				</dictionary>
-				<bool> True </bool>
-				<real> 1 </real>
-				<bool> False </bool>
-				<vector2> 160, 32 </vector2>
-				<real> 0 </real>
-				<vector2> 1, 1 </vector2>
-				<resource  resource_type="Texture" path="res://pipe.png">  </resource>
-				<vector2> 0, 0 </vector2>
 				<int> 1 </int>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 3.33417, -0, 0, 3.23761, -0.0595418, 2.10051 </matrix32>
 				<int> 0 </int>
+				<vector2> -0.595781, 2.18042 </vector2>
+				<resource  resource_type="Texture" path="res://res/reabilitation.png">  </resource>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
-				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 2.46154, -0, 0, 2.46154, 0, -1.90735e-006 </matrix32>
-				<vector2> 0, -1.90735e-006 </vector2>
-				<vector2> 2.46154, 2.46154 </vector2>
-				<vector2> 32, 32 </vector2>
-				<resource  resource_type="Texture" path="res://spess2.png">  </resource>
-				<resource  resource_type="Script" path="local://2">  </resource>
+				<vector2> -0.0595418, 2.10051 </vector2>
+				<vector2> 3.33417, 3.23761 </vector2>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="171"> 				-1, -1, 0, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 4, 3, -1, 19, 1, 0, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 10, 6, 11, 7, 12, 8, 13, 2, 14, 9, 15, 4, 16, 4, 17, 10, 18, 10, 19, 11, 20, 12, 21, 4, 22, 13, 0, 1, 0, 23, 23, -1, 17, 1, 0, 5, 2, 6, 3, 7, 3, 8, 4, 9, 9, 10, 6, 11, 7, 24, 10, 25, 14, 26, 15, 27, 4, 28, 10, 29, 9, 30, 6, 31, 3, 32, 6, 0, 2, 0, 33, 33, -1, 10, 1, 0, 5, 2, 6, 3, 7, 3, 8, 4, 9, 16, 10, 6, 11, 17, 34, 14, 35, 4, 0, 0, 0, 4, 36, -1, 20, 1, 0, 5, 2, 6, 3, 7, 3, 8, 4, 9, 18, 10, 6, 11, 7, 12, 19, 13, 2, 14, 9, 15, 4, 16, 4, 17, 10, 18, 10, 19, 11, 20, 12, 21, 4, 22, 13, 37, 20, 0 </int_array>
+			<int_array  len="156"> 				-1, -1, 0, 0, -1, 10, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 9, 7, 10, 8, 0, 0, 0, 11, 11, -1, 25, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 12, 9, 13, 10, 14, 11, 15, 3, 16, 9, 17, 12, 18, 2, 19, 2, 20, 5, 21, 3, 22, 12, 23, 12, 24, 3, 25, 1, 26, 1, 27, 4, 28, 5, 0, 1, 0, 30, 29, -1, 19, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 13, 7, 5, 8, 6, 31, 14, 32, 1, 33, 4, 34, 3, 35, 3, 36, 9, 37, 9, 38, 12, 39, 15, 40, 3, 41, 16, 0, 1, 0, 42, 42, -1, 10, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 17, 7, 5, 8, 18, 43, 10, 44, 3, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>
