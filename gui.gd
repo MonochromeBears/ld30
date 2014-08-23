@@ -24,7 +24,7 @@ func add_turel():
 		
 func draw_turel():
 	var tr = turel_scene.instance()
-	tr.set_pos(Vector2(lastTurelPos, 10))
+	tr.set_pos(Vector2(lastTurelPos, 0))
 	lastTurelPos = lastTurelPos + 64
 	turelsNode = add_child(tr)
 	
