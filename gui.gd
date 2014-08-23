@@ -10,6 +10,7 @@ var scoreLabel
 var turelsNode
 var lastTurelPos
 var turel_scene = preload("res://turel.xml")
+var reabilitation_scene = preload("res://reabilitation.xml")
 # member variables here, example:
 # var a=2
 # var b="textvar"
@@ -25,13 +26,17 @@ func add_turel():
 func draw_turel():
 	var tr = turel_scene.instance()
 	tr.set_pos(Vector2(lastTurelPos, 0))
-	lastTurelPos = lastTurelPos + 64
+	lastTurelPos += 64
 	turelsNode = add_child(tr)
 	
 	pass
 	
 func draw_center():
-	pass
+	var dr = reabilitation_scene.instance()
+	dr.set_pos(Vector2(lastTurelPos, 0))
+	lastTurelPos += 64
+	turelsNode = add_child(dr)
+	
 	
 func add_center():
 	if (credits >= 100):
