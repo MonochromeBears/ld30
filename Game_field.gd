@@ -1,4 +1,3 @@
-
 extends Node
 
 # member variables here, example:
@@ -23,3 +22,8 @@ func generate_obstacle():
 func _fixed_process(delta):
 	if (randi()%100 < 4):
 		generate_obstacle()
+
+
+
+func _on_Restart_pressed():
+	get_node("/root/global").goto_scene("res://splash.xml")
