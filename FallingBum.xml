@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="4" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://FallingBum.gd" type="Script"></ext_resource>
 	<ext_resource path="res://Bum.png" type="Texture"></ext_resource>
-	<ext_resource path="res://ЫФыфFallingBum.gd" type="Script"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="3"> 			0, -10, 8.66025, 5, -8.66025, 5 </vector2_array>
@@ -74,7 +74,7 @@
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 2.36081, -0, 0, 3.59466, -1.49693, 4.98974 </matrix32>
 				<int> 0 </int>
-				<resource  resource_type="Script" path="res://ЫФыфFallingBum.gd">  </resource>
+				<resource  resource_type="Script" path="res://FallingBum.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
@@ -83,8 +83,9 @@
 							<string> "current" </string>
 							<int> 0 </int>
 							<string> "sources" </string>
-							<array  len="1" shared="false">
-								<string> "res://ЫФыфFallingBum.gd" </string>
+							<array  len="2" shared="false">
+								<string> "res://FallingBum2.gd" </string>
+								<string> "res://FallingBum.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
