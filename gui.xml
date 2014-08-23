@@ -93,13 +93,14 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 2 </int>
+							<int> 4 </int>
 							<string> "sources" </string>
-							<array  len="4" shared="false">
+							<array  len="5" shared="false">
 								<string> "res://scripts/add_turel.gd" </string>
 								<string> "res://scripts/add_tr.gd" </string>
 								<string> "res://gui.gd" </string>
 								<string> "res://Turels.gd" </string>
+								<string> "res://new_scene.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
