@@ -5,14 +5,12 @@ extends Node
 # var a=2
 # var b="textvar"
 
-var world  = preload("res://Game_field.xml");
+var world = preload("res://Game_field.xml");
+var worldInstance
 
 func _ready():
-	# Initalization here
-	pass
-
-
+	worldInstance = world.instance()
 
 
 func _on_Button_pressed():
-	add_child(world.instance())
+	get_node("/root/global").goto_scene("res://Game_field.xml")
