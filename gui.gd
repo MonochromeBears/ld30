@@ -7,6 +7,9 @@ var credits
 var crossButton
 var score
 var scoreLabel
+var turelsNode
+var lastTurelPos
+var turel_scene = preload("res://turel.xml")
 # member variables here, example:
 # var a=2
 # var b="textvar"
@@ -20,6 +23,11 @@ func add_turel():
 		
 		
 func draw_turel():
+	var tr = turel_scene.instance()
+	tr.set_pos(Vector2(lastTurelPos, 10))
+	lastTurelPos = lastTurelPos + 64
+	turelsNode = add_child(tr)
+	
 	pass
 	
 func draw_center():
@@ -36,6 +44,11 @@ func _ready():
 	# Initalization here
 	credits = 2000
 	score = 0
+	
+	#turelsNode
+	turelsNode = get_node("Turels")
+	
+	lastTurelPos = 64
 	
 	#buttons
 	turelButton = get_node("VBoxContainer").get_node("AddTurelButton")
