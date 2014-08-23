@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ::res://::1408787961
 Bum.png::ImageTexture::1408778059::
 FallingBum.gd::GDScript::1408784987::
@@ -12,3 +13,13 @@ pipe.png::ImageTexture::1408775848::
 spess2.png::ImageTexture::1408776407::
 tileset.res::TileSet::1408776419::
 tileset.xml::PackedScene::1408781468::
+=======
+::res://::1408779917
+Spess.png::ImageTexture::1408779917::
+first_scene.xml::PackedScene::1408770877::
+hateset.res::TileSet::1408779917::
+hl-icon.png::ImageTexture::1408770877::
+icon.png::ImageTexture::1408770877::
+new_scene.xml::PackedScene::1408779917::
+pipeX2.png::ImageTexture::1408779917::
+>>>>>>> dev
