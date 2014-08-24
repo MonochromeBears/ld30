@@ -7,6 +7,8 @@ extends Node2D
 
 var homeless = preload("res://FallingBum.gd")
 var Laser = preload("res://laser.xml")
+var BumBoom = preload("res://BumExplode.xml")
+
 var LockOnTarget # Turred aimed at this
 var Targets = []
 var Turret
@@ -43,6 +45,12 @@ func _fixed_process(delta):
 			var VectorBum = LockOnTarget.get_pos()
 			var Angle = VectorGun.angle_to_point(VectorBum)
 			Turret.set_rot(Angle)
+			
+			var BumExploder = BumBoom.instance()
+			BumExploder.set_pos(VectorBum)
+			BumExploder.set_emitting(true)
+			get_parent().add_child(BumExploder)
+			
 			var lazor = Laser.instance()
 			lazor.set_emission_half_extents(offset_vector(VectorGun,VectorBum))
 			lazor.set_emitting(true)
