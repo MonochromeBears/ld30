@@ -43,4 +43,13 @@ func _integrate_forces(s):
 
 
 func _ready():
+	var text1 = "res://res/homless-2.png";
+	var text2 = "res://res/homless.png"
+	var i = randi()%2 - 1
+	if (i>=0):
+		var texture = ResourceLoader.load(text1)
+		get_node("Sprite").set_texture(texture)
+	else:
+		var texture = ResourceLoader.load(text2)
+		get_node("Sprite").set_texture(texture)
 	return
