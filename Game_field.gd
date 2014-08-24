@@ -5,8 +5,8 @@ extends Node
 # var b="textvar"
 
 var FallinBum = preload("res://FallingBum.xml")
-var DropWidth = 6*32 
-var SceneCenter = 17*32
+var DropWidth = 20*32 
+var SceneCenter = 20*32
 var RndArray = [-1,1]
 func _ready():
 	set_fixed_process(true)
