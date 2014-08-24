@@ -19,6 +19,8 @@ var cooldown = 20 #frames cooldown
 var cantshoot = 0
 var turret_range = 500
 
+var shots_fired = 0
+
 func offset_vector(VectorOne, VectorTwo):
 	var dots = []
 	var dx = VectorTwo.x - VectorOne.x
@@ -38,6 +40,7 @@ func _ready():
 	pass
 	
 func _shoot_lazor(LockOnTarget):
+	shots_fired += 1
 	cantshoot = cooldown
 	var VectorGun = get_pos()
 	var VectorBum = LockOnTarget.get_pos()
@@ -64,6 +67,8 @@ func len_to_target(From, Target):
 	
 	
 func _fixed_process(delta):
+	if (shots_fired >= 150):
+		queue_free()
 	if(cantshoot):
 		cantshoot -= 1
 	else:
