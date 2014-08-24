@@ -15,7 +15,7 @@
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="56">
+			<string_array  len="48">
 				<string> "Node2D" </string>
 				<string> "_import_path" </string>
 				<string> "visibility/visible" </string>
@@ -28,24 +28,16 @@
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
 				<string> "Reabilitation" </string>
-				<string> "RigidBody2D" </string>
+				<string> "StaticBody2D" </string>
 				<string> "shape_count" </string>
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
 				<string> "shapes/0/trigger" </string>
 				<string> "layers" </string>
-				<string> "mode" </string>
-				<string> "mass" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
 				<string> "friction" </string>
 				<string> "bounce" </string>
-				<string> "custom_integrator" </string>
-				<string> "continuous_cd" </string>
-				<string> "contacts_reported" </string>
-				<string> "contact_monitor" </string>
-				<string> "active" </string>
-				<string> "can_sleep" </string>
-				<string> "velocity/linear" </string>
-				<string> "velocity/angular" </string>
 				<string> "reabilitation" </string>
 				<string> "Sprite" </string>
 				<string> "texture" </string>
@@ -200,30 +192,30 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 				</dictionary>
 				<int> 1 </int>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 3.33417, -0, 0, 3.23761, -0.0595418, 2.10051 </matrix32>
-				<int> 0 </int>
 				<vector2> -0.595781, 2.18042 </vector2>
 				<resource  resource_type="Texture" path="res://res/reabilitation.png">  </resource>
+				<int> 0 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
 				<vector2> -0.0595418, 2.10051 </vector2>
 				<vector2> 3.33417, 3.23761 </vector2>
 				<resource  resource_type="Shape2D" path="local://2">  </resource>
-				<matrix32> 6.2566, -0, 0, 4.85314, -2.28882e-05, -12.9374 </matrix32>
+				<matrix32> 6.2566, -0, 0, 4.85314, -2.28882e-005, -12.9374 </matrix32>
 				<vector2> 0, 1 </vector2>
 				<real> 98 </real>
 				<real> 0.1 </real>
-				<vector2> -2.28882e-05, -12.9374 </vector2>
+				<vector2> -2.28882e-005, -12.9374 </vector2>
 				<vector2> 6.2566, 4.85314 </vector2>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="224"> 				-1, -1, 0, 0, -1, 10, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 9, 7, 10, 8, 0, 0, 0, 12, 11, -1, 25, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 13, 9, 14, 10, 15, 11, 16, 3, 17, 9, 18, 12, 19, 2, 20, 2, 21, 5, 22, 3, 23, 12, 24, 12, 25, 3, 26, 1, 27, 1, 28, 4, 29, 5, 0, 1, 0, 31, 30, -1, 19, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 13, 7, 5, 8, 6, 32, 14, 33, 1, 34, 4, 35, 3, 36, 3, 37, 9, 38, 9, 39, 12, 40, 15, 41, 3, 42, 16, 0, 1, 0, 43, 43, -1, 10, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 17, 7, 5, 8, 18, 44, 10, 45, 3, 0, 1, 0, 46, 46, -1, 17, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 13, 9, 14, 19, 15, 20, 16, 3, 47, 3, 48, 21, 49, 22, 50, 23, 51, 1, 0, 4, 0, 43, 43, -1, 10, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 24, 7, 5, 8, 25, 44, 19, 45, 3, 0 </int_array>
+			<int_array  len="208"> 				-1, -1, 0, 0, -1, 10, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 9, 7, 10, 8, 0, 0, 0, 12, 11, -1, 17, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 13, 9, 14, 10, 15, 11, 16, 3, 17, 9, 18, 4, 19, 5, 20, 2, 21, 5, 0, 1, 0, 23, 22, -1, 19, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 12, 7, 5, 8, 6, 24, 13, 25, 1, 26, 4, 27, 3, 28, 3, 29, 9, 30, 9, 31, 14, 32, 15, 33, 3, 34, 16, 0, 1, 0, 35, 35, -1, 10, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 17, 7, 5, 8, 18, 36, 10, 37, 3, 0, 1, 0, 38, 38, -1, 17, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 13, 9, 14, 19, 15, 20, 16, 3, 39, 3, 40, 21, 41, 22, 42, 23, 43, 1, 0, 4, 0, 35, 35, -1, 10, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 24, 7, 5, 8, 25, 36, 19, 37, 3, 0 </int_array>
 			<string> "conns" </string>
-			<int_array  len="12"> 				4, 0, 53, 52, 2, 0, 4, 0, 55, 54, 2, 0 </int_array>
+			<int_array  len="12"> 				4, 0, 45, 44, 2, 0, 4, 0, 47, 46, 2, 0 </int_array>
 		</dictionary>
 
 	</main_resource>
