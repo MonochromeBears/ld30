@@ -14,8 +14,10 @@ var boss = preload("res://Boss.gd")
 var LockOnTarget # Turred aimed at this
 var Targets = []
 var Turret
-var cooldown = 10 #frames cooldown
+var Collider
+var cooldown = 20 #frames cooldown
 var cantshoot = 0
+var turret_range = 500
 
 func offset_vector(VectorOne, VectorTwo):
 	var dots = []
@@ -31,10 +33,12 @@ func offset_vector(VectorOne, VectorTwo):
 	
 func _ready():
 	Turret = get_child("Telo").get_child("turel")
+	Collider = get_child("Telo").get_child("Area2D")
 	set_fixed_process(true)
 	pass
 	
-func _shoot_lazor():
+func _shoot_lazor(LockOnTarget):
+	cantshoot = cooldown
 	var VectorGun = get_pos()
 	var VectorBum = LockOnTarget.get_pos()
 	var Angle = VectorGun.angle_to_point(VectorBum)
@@ -53,44 +57,35 @@ func _shoot_lazor():
 	BumExploder.set_emitting(true)
 	get_parent().add_child(BumExploder)
 	
+func len_to_target(From, Target):
+	var dx = From.x - Target.x
+	var dy = From.y - Target.y
+	return Vector2(dx,dy).length() #.length()/2
+	
 	
 func _fixed_process(delta):
 	if(cantshoot):
 		cantshoot -= 1
 	else:
-		if(!LockOnTarget):
-			if(Targets.size()):
-				LockOnTarget = Targets[0]
-		else:
-			cantshoot = cooldown
-			if(LockOnTarget extends homeless):
-				_shoot_lazor()
-				Targets.erase(LockOnTarget)
-				LockOnTarget.get_parent().remove_and_delete_child(LockOnTarget)
-				LockOnTarget = null
+		var parent = get_parent().get_parent()
+		#var name = parent.get_name()
+		for Obj in parent.get_children():
+			if(Obj extends homeless):
+				if(len_to_target(get_pos(), Obj.get_pos()) > turret_range):
+					continue
+				_shoot_lazor(Obj)
+				Obj.get_parent().remove_and_delete_child(Obj)
 				var par = get_parent()
 				par.add_credits(5)
 				par.add_score(5)
 				return
-			if(LockOnTarget extends boss):
-				_shoot_lazor()
-				if(LockOnTarget.damage()):
-					Targets.erase(LockOnTarget)
-					LockOnTarget.get_parent().remove_and_delete_child(LockOnTarget)
-					LockOnTarget = null
+			if(Obj extends boss):
+				if(len_to_target(get_pos(), Obj.get_pos()) > turret_range):
+					continue
+				_shoot_lazor(Obj)
+				if(Obj.damage()):
+					Obj.get_parent().remove_and_delete_child(Obj)
 					var par = get_parent()
 					par.add_credits(5)
 					par.add_score(5)
 				return
-			
-			#var par = self.get_parent()
-		
-	
-func _on_Area2D_body_enter( body ):
-	if ((body extends homeless) || (body extends boss)):
-		Targets.push_back(body)
-
-func _on_Area2D_body_exit( body ):
-	if ((body extends homeless) || (body extends boss)):
-		if(Targets.find(body)):
-			Targets.erase(body)
