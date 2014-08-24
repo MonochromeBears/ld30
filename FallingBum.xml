@@ -135,8 +135,9 @@
 							<string> "current" </string>
 							<int> 0 </int>
 							<string> "sources" </string>
-							<array  len="1" shared="false">
+							<array  len="2" shared="false">
 								<string> "res://FallingBum.gd" </string>
+								<string> "res://Turret_logic.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
