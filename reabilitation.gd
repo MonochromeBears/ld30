@@ -24,6 +24,9 @@ func _on_Area2D_body_exit( body ):
 
 func _on_Area2D_body_enter( body ):
 	var name = get_name()
+	var parent = get_parent()
 	if body extends homeless:
 		body.get_parent().remove_and_delete_child(body)
+		parent.add_credits(10)
+		parent.add_score(20)
 	pass # replace with function body
