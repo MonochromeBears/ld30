@@ -67,7 +67,7 @@ func len_to_target(From, Target):
 	
 	
 func _fixed_process(delta):
-	if (shots_fired >= 150):
+	if (shots_fired >= 70):
 		queue_free()
 	if(cantshoot):
 		cantshoot -= 1
