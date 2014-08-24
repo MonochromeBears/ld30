@@ -12,6 +12,7 @@ func _ready():
 	set_fixed_process(true)
 	set_process_input(true)
 	get_node("TurrelControl").hide()
+	get_node("CenterControl").hide()
 	pass
 
 func generate_obstacle():
@@ -38,7 +39,11 @@ var inputType # 1 - turret, 2 - center
 func _input( ev ):
 	if (!startInputProcessing):
 		return
-	var object = get_node("TurrelControl")
+	var object
+	if inputType == 1:
+		object = get_node("TurrelControl")
+	else:
+		object = get_node("CenterControl")
 	object.show()
 	Input.set_mouse_mode(1)
 	if (ev.type==InputEvent.MOUSE_BUTTON):
@@ -47,7 +52,10 @@ func _input( ev ):
 		object.hide()
 		Input.set_mouse_mode(0)
 		#var pos_x = ev.pos.x
-		get_node("GUI").add_turel(Vector2(round(ev.pos.x / 64) * 64, 600))
+		if inputType == 1:
+			get_node("GUI").add_turel(Vector2(round(ev.pos.x / 64) * 64, 600))
+		elif inputType == 2:
+			get_node("GUI").add_center(Vector2(round(ev.pos.x / 64) * 64, 600))
 	elif (ev.type==InputEvent.MOUSE_MOTION):
 #		print("Mouse Motion at: ",ev.pos)
 		object.set_pos(ev.pos)
@@ -55,3 +63,7 @@ func _input( ev ):
 func show_turret_control():
 	startInputProcessing = true
 	inputType = 1
+	
+func show_center_control():
+	startInputProcessing = true
+	inputType = 2

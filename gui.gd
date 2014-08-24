@@ -28,17 +28,18 @@ func draw_turel(pos):
 	turelsNode = add_child(tr)
 	pass
 	
-func draw_center():
+func draw_center(pos):
 	var dr = reabilitation_scene.instance()
+	dr.set_pos(pos)
 #	dr.set_pos(Vector2(lastTurelPos, 0))
 	turelsNode = add_child(dr)
 	
 	
-func add_center():
+func add_center(pos):
 	if (credits >= 100):
 		credits = credits - 100
 		creditsLabel.set_text(str(credits))
-		draw_center()
+		draw_center(pos)
 
 func _ready():
 	#Globals.set("space_creditsLabel", 20)
@@ -71,5 +72,4 @@ func _on_turel_button_pressed():
 	get_parent().show_turret_control()
 
 func _on_AddCrossButton_pressed():
-	add_center()
-	pass # replace with function body
+	get_parent().show_center_control()
