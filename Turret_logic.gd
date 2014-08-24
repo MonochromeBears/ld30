@@ -76,7 +76,7 @@ func _fixed_process(delta):
 				_shoot_lazor(Obj)
 				Obj.get_parent().remove_and_delete_child(Obj)
 				var par = get_parent()
-				par.add_credits(5)
+				par.add_credits(1)
 				par.add_score(5)
 				return
 			if(Obj extends boss):
@@ -86,6 +86,6 @@ func _fixed_process(delta):
 				if(Obj.damage()):
 					Obj.get_parent().remove_and_delete_child(Obj)
 					var par = get_parent()
-					par.add_credits(5)
-					par.add_score(5)
+					par.add_credits(20)
+					par.add_score(100)
 				return
