@@ -67,7 +67,7 @@ func len_to_target(From, Target):
 	
 	
 func _fixed_process(delta):
-	if (shots_fired >= 70):
+	if (shots_fired >= 50):
 		queue_free()
 	if(cantshoot):
 		cantshoot -= 1
@@ -81,7 +81,7 @@ func _fixed_process(delta):
 				_shoot_lazor(Obj)
 				Obj.get_parent().remove_and_delete_child(Obj)
 				var par = get_parent()
-				par.add_credits(1)
+				par.add_credits(3)
 				par.add_score(5)
 				return
 			if(Obj extends boss):
