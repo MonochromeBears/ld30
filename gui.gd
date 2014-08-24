@@ -73,3 +73,11 @@ func _on_turel_button_pressed():
 
 func _on_AddCrossButton_pressed():
 	get_parent().show_center_control()
+	
+func add_credits(credits_diff):
+	credits += credits_diff
+	creditsLabel.set_text(str(credits))
+	
+func add_score(score_diff):
+	score += score_diff
+	scoreLabel.set_text(str(score))

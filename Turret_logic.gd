@@ -8,6 +8,7 @@ extends Node2D
 var homeless = preload("res://FallingBum.gd")
 var Laser = preload("res://laser.xml")
 var BumBoom = preload("res://BumExplode.xml")
+#var gui = preload("res://gui.gd")
 
 var LockOnTarget # Turred aimed at this
 var Targets = []
@@ -61,6 +62,11 @@ func _fixed_process(delta):
 			Targets.erase(LockOnTarget)
 			LockOnTarget.get_parent().remove_and_delete_child(LockOnTarget)
 			LockOnTarget = null
+			var par = get_parent()
+			par.add_credits(5)
+			par.add_score(5)
+			
+			#var par = self.get_parent()
 		
 	
 func _on_Area2D_body_enter( body ):
