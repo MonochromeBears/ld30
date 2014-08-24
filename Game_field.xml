@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="13" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://Pipe.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://res/pipe.png" type="Texture"></ext_resource>
-	<ext_resource path="res://res/cold-planet.png" type="Texture"></ext_resource>
-	<ext_resource path="res://res/static_bg.png" type="Texture"></ext_resource>
-	<ext_resource path="res://Game_field.gd" type="Script"></ext_resource>
-	<ext_resource path="res://res/reabilitation.png" type="Texture"></ext_resource>
 	<ext_resource path="res://res/Main-theme.ogg" type="AudioStream"></ext_resource>
-	<ext_resource path="res://res/turel_platform.png" type="Texture"></ext_resource>
-	<ext_resource path="res://tileset.res" type="TileSet"></ext_resource>
 	<ext_resource path="res://res/hot-planet.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gui.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://res/reabilitation.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/pipe.png" type="Texture"></ext_resource>
 	<ext_resource path="res://res/gun.png" type="Texture"></ext_resource>
+	<ext_resource path="res://gui.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://res/cold-planet.png" type="Texture"></ext_resource>
+	<ext_resource path="res://Pipe.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://tileset.res" type="TileSet"></ext_resource>
+	<ext_resource path="res://Game_field.gd" type="Script"></ext_resource>
+	<ext_resource path="res://res/static_bg.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/turel_platform.png" type="Texture"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="112">
+			<string_array  len="125">
 				<string> "Node" </string>
 				<string> "_import_path" </string>
 				<string> "script/script" </string>
@@ -72,26 +72,6 @@
 				<string> "margin/top" </string>
 				<string> "margin/right" </string>
 				<string> "margin/bottom" </string>
-				<string> "Restart" </string>
-				<string> "Button" </string>
-				<string> "margin/left" </string>
-				<string> "focus_neighbour/left" </string>
-				<string> "focus_neighbour/top" </string>
-				<string> "focus_neighbour/right" </string>
-				<string> "focus_neighbour/bottom" </string>
-				<string> "focus/ignore_mouse" </string>
-				<string> "focus/stop_mouse" </string>
-				<string> "size_flags/horizontal" </string>
-				<string> "size_flags/vertical" </string>
-				<string> "size_flags/stretch_ratio" </string>
-				<string> "disabled" </string>
-				<string> "toggle_mode" </string>
-				<string> "click_on_press" </string>
-				<string> "text" </string>
-				<string> "icon" </string>
-				<string> "flat" </string>
-				<string> "clip_text" </string>
-				<string> "align" </string>
 				<string> "TurrelControl" </string>
 				<string> "Node2D" </string>
 				<string> "Sprite 2" </string>
@@ -126,6 +106,39 @@
 				<string> "stream/autoplay" </string>
 				<string> "stream/paused" </string>
 				<string> "CenterControl" </string>
+				<string> "game_over" </string>
+				<string> "Restart" </string>
+				<string> "Button" </string>
+				<string> "margin/left" </string>
+				<string> "focus_neighbour/left" </string>
+				<string> "focus_neighbour/top" </string>
+				<string> "focus_neighbour/right" </string>
+				<string> "focus_neighbour/bottom" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "size_flags/stretch_ratio" </string>
+				<string> "disabled" </string>
+				<string> "toggle_mode" </string>
+				<string> "click_on_press" </string>
+				<string> "text" </string>
+				<string> "icon" </string>
+				<string> "flat" </string>
+				<string> "clip_text" </string>
+				<string> "align" </string>
+				<string> "Label" </string>
+				<string> "range/min" </string>
+				<string> "range/max" </string>
+				<string> "range/step" </string>
+				<string> "range/page" </string>
+				<string> "range/value" </string>
+				<string> "range/exp_edit" </string>
+				<string> "rounded_values" </string>
+				<string> "valign" </string>
+				<string> "autowrap" </string>
+				<string> "uppercase" </string>
+				<string> "percent_visible" </string>
 				<string> "_on_Restart_pressed" </string>
 				<string> "pressed" </string>
 			</string_array>
@@ -134,9 +147,9 @@
 			<string> "conn_count" </string>
 			<int> 1 </int>
 			<string> "node_count" </string>
-			<int> 37 </int>
+			<int> 39 </int>
 			<string> "variants" </string>
-			<array  len="70" shared="false">
+			<array  len="76" shared="false">
 				<node_path> "" </node_path>
 				<resource  resource_type="Script" path="res://Game_field.gd">  </resource>
 				<dictionary  shared="false">
@@ -145,12 +158,13 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 1 </int>
+							<int> 0 </int>
 							<string> "sources" </string>
-							<array  len="3" shared="false">
+							<array  len="4" shared="false">
 								<string> "res://Game_field.gd" </string>
 								<string> "res://gui.gd" </string>
 								<string> "res://Turret_logic.gd" </string>
+								<string> "res://Pipe.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
@@ -158,11 +172,11 @@
 							<string> "pixel_snap" </string>
 							<bool> False </bool>
 							<string> "zoom" </string>
-							<real> 0.661317 </real>
+							<real> 0.438731 </real>
 							<string> "use_snap" </string>
 							<bool> True </bool>
 							<string> "ofs" </string>
-							<vector2> -345.935, -100.535 </vector2>
+							<vector2> -304.951, -98.8223 </vector2>
 							<string> "snap" </string>
 							<int> 64 </int>
 						</dictionary>
@@ -286,12 +300,7 @@
 				<real> 64 </real>
 				<real> 39 </real>
 				<real> 104 </real>
-				<real> 1024 </real>
-				<real> 1152 </real>
-				<real> 128 </real>
-				<int> 2 </int>
-				<string> "RESTART" </string>
-				<resource name=""></resource>				<resource  resource_type="Texture" path="res://res/turel_platform.png">  </resource>
+				<resource  resource_type="Texture" path="res://res/turel_platform.png">  </resource>
 				<vector2> 0, -19 </vector2>
 				<resource  resource_type="Texture" path="res://res/gun.png">  </resource>
 				<dictionary  shared="false">
@@ -322,11 +331,22 @@
 				<vector2> 1248, 736 </vector2>
 				<resource  resource_type="AudioStream" path="res://res/Main-theme.ogg">  </resource>
 				<resource  resource_type="Texture" path="res://res/reabilitation.png">  </resource>
+				<real> 576 </real>
+				<real> 384 </real>
+				<real> 704 </real>
+				<real> 448 </real>
+				<int> 2 </int>
+				<string> "RESTART" </string>
+				<resource name=""></resource>				<real> 512 </real>
+				<real> 320 </real>
+				<real> 765 </real>
+				<string> "WASTED" </string>
+				<real> -1 </real>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="775"> 				-1, -1, 0, 0, -1, 3, 1, 0, 2, 1, 3, 2, 0, 0, 0, 5, 4, -1, 15, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 7, 12, 8, 13, 9, 14, 10, 15, 11, 16, 12, 17, 4, 18, 7, 19, 13, 0, 0, 0, 21, 20, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 14, 11, 7, 12, 15, 22, 16, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 0, 0, 21, 33, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 20, 11, 7, 12, 15, 22, 21, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 0, 0, 21, 34, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 22, 11, 7, 12, 15, 22, 23, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 0, 0, 21, 35, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 24, 11, 7, 12, 15, 22, 25, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 0, 0, 36, 36, -1, 24, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 26, 11, 7, 12, 27, 24, 28, 23, 3, 37, 5, 38, 3, 39, 7, 40, 15, 41, 29, 42, 29, 43, 30, 44, 30, 45, 3, 46, 3, 47, 31, 48, 31, 49, 31, 50, 31, 0, 0, 0, 52, 51, 32, 3, 53, 33, 54, 34, 55, 35, 0, 0, 0, 57, 56, -1, 26, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 58, 36, 53, 33, 54, 37, 55, 38, 59, 0, 60, 0, 61, 0, 62, 0, 63, 5, 64, 3, 65, 39, 66, 39, 67, 4, 68, 5, 69, 5, 70, 5, 71, 40, 72, 41, 73, 5, 74, 5, 75, 13, 0, 0, 0, 77, 76, -1, 8, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 7, 12, 15, 0, 9, 0, 21, 21, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 7, 12, 15, 22, 42, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 9, 0, 21, 78, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 43, 11, 7, 12, 15, 22, 44, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 0, 0, 77, 79, -1, 10, 1, 0, 6, 3, 7, 4, 8, 4, 9, 3, 80, 13, 10, 6, 11, 7, 12, 15, 3, 45, 0, 12, 0, 82, 81, 46, 1, 10, 47, 0, 12, 0, 82, 82, 46, 1, 10, 48, 0, 12, 0, 82, 83, 46, 1, 10, 49, 0, 12, 0, 82, 84, 46, 1, 10, 50, 0, 12, 0, 82, 85, 46, 1, 10, 51, 0, 12, 0, 82, 86, 46, 1, 10, 52, 0, 12, 0, 82, 87, 46, 1, 10, 53, 0, 12, 0, 82, 88, 46, 1, 10, 54, 0, 12, 0, 82, 89, 46, 1, 10, 55, 0, 12, 0, 82, 90, 46, 1, 10, 56, 0, 12, 0, 82, 91, 46, 1, 10, 57, 0, 12, 0, 82, 92, 46, 1, 10, 58, 0, 12, 0, 82, 93, 46, 1, 10, 59, 0, 12, 0, 82, 94, 46, 1, 10, 60, 0, 12, 0, 82, 95, 46, 1, 10, 61, 0, 12, 0, 82, 96, 46, 1, 10, 62, 0, 12, 0, 82, 97, 46, 1, 10, 63, 0, 12, 0, 82, 98, 46, 1, 10, 64, 0, 12, 0, 82, 99, 46, 1, 10, 65, 0, 12, 0, 82, 100, 46, 1, 10, 66, 0, 12, 0, 82, 101, 46, 1, 10, 67, 0, 0, 0, 102, 102, -1, 7, 1, 0, 103, 68, 104, 5, 105, 3, 106, 7, 107, 3, 108, 5, 0, 0, 0, 77, 109, -1, 8, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 7, 12, 15, 0, 35, 0, 21, 21, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 7, 12, 15, 22, 69, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0 </int_array>
+			<int_array  len="865"> 				-1, -1, 0, 0, -1, 3, 1, 0, 2, 1, 3, 2, 0, 0, 0, 5, 4, -1, 15, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 7, 12, 8, 13, 9, 14, 10, 15, 11, 16, 12, 17, 4, 18, 7, 19, 13, 0, 0, 0, 21, 20, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 14, 11, 7, 12, 15, 22, 16, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 0, 0, 21, 33, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 20, 11, 7, 12, 15, 22, 21, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 0, 0, 21, 34, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 22, 11, 7, 12, 15, 22, 23, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 0, 0, 21, 35, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 24, 11, 7, 12, 15, 22, 25, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 0, 0, 36, 36, -1, 24, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 26, 11, 7, 12, 27, 24, 28, 23, 3, 37, 5, 38, 3, 39, 7, 40, 15, 41, 29, 42, 29, 43, 30, 44, 30, 45, 3, 46, 3, 47, 31, 48, 31, 49, 31, 50, 31, 0, 0, 0, 52, 51, 32, 3, 53, 33, 54, 34, 55, 35, 0, 0, 0, 57, 56, -1, 8, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 7, 12, 15, 0, 8, 0, 21, 21, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 7, 12, 15, 22, 36, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 8, 0, 21, 58, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 37, 11, 7, 12, 15, 22, 38, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 0, 0, 57, 59, -1, 10, 1, 0, 6, 3, 7, 4, 8, 4, 9, 3, 60, 13, 10, 6, 11, 7, 12, 15, 3, 39, 0, 11, 0, 62, 61, 40, 1, 10, 41, 0, 11, 0, 62, 62, 40, 1, 10, 42, 0, 11, 0, 62, 63, 40, 1, 10, 43, 0, 11, 0, 62, 64, 40, 1, 10, 44, 0, 11, 0, 62, 65, 40, 1, 10, 45, 0, 11, 0, 62, 66, 40, 1, 10, 46, 0, 11, 0, 62, 67, 40, 1, 10, 47, 0, 11, 0, 62, 68, 40, 1, 10, 48, 0, 11, 0, 62, 69, 40, 1, 10, 49, 0, 11, 0, 62, 70, 40, 1, 10, 50, 0, 11, 0, 62, 71, 40, 1, 10, 51, 0, 11, 0, 62, 72, 40, 1, 10, 52, 0, 11, 0, 62, 73, 40, 1, 10, 53, 0, 11, 0, 62, 74, 40, 1, 10, 54, 0, 11, 0, 62, 75, 40, 1, 10, 55, 0, 11, 0, 62, 76, 40, 1, 10, 56, 0, 11, 0, 62, 77, 40, 1, 10, 57, 0, 11, 0, 62, 78, 40, 1, 10, 58, 0, 11, 0, 62, 79, 40, 1, 10, 59, 0, 11, 0, 62, 80, 40, 1, 10, 60, 0, 11, 0, 62, 81, 40, 1, 10, 61, 0, 0, 0, 82, 82, -1, 7, 1, 0, 83, 62, 84, 5, 85, 3, 86, 7, 87, 3, 88, 5, 0, 0, 0, 57, 89, -1, 8, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 7, 12, 15, 0, 34, 0, 21, 21, -1, 19, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 7, 12, 15, 22, 63, 23, 3, 24, 6, 25, 5, 26, 5, 27, 13, 28, 13, 29, 17, 30, 18, 31, 5, 32, 19, 0, 0, 0, 57, 90, -1, 8, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 7, 12, 15, 0, 36, 0, 92, 91, -1, 26, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 93, 64, 53, 65, 54, 66, 55, 67, 94, 0, 95, 0, 96, 0, 97, 0, 98, 5, 99, 3, 100, 68, 101, 68, 102, 4, 103, 5, 104, 5, 105, 5, 106, 69, 107, 70, 108, 5, 109, 5, 110, 13, 0, 36, 0, 111, 111, -1, 30, 1, 0, 6, 3, 7, 4, 8, 4, 9, 5, 93, 71, 53, 72, 54, 73, 55, 65, 94, 0, 95, 0, 96, 0, 97, 0, 98, 3, 99, 3, 100, 68, 102, 4, 112, 7, 113, 4, 114, 4, 115, 4, 116, 7, 117, 5, 118, 5, 106, 74, 110, 13, 119, 13, 120, 5, 121, 5, 122, 75, 0 </int_array>
 			<string> "conns" </string>
-			<int_array  len="6"> 				8, 0, 111, 110, 2, 0 </int_array>
+			<int_array  len="6"> 				37, 0, 124, 123, 2, 0 </int_array>
 		</dictionary>
 
 	</main_resource>

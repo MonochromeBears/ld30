@@ -2,7 +2,7 @@
 <resource_file type="PackedScene" subresource_count="4" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
 	<ext_resource path="res://pipe.png" type="Texture"></ext_resource>
 	<ext_resource path="res://Pipe.gd" type="Script"></ext_resource>
-	<resource type="RectangleShape2D" path="local://1">
+	<resource type="RectangleShape2D" path="local://0">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2 name="extents"> 10, 10 </vector2>
 
@@ -63,7 +63,7 @@
 				<real> 0 </real>
 				<vector2> 1, 1 </vector2>
 				<int> 1 </int>
-				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<resource  resource_type="Shape2D" path="local://0">  </resource>
 				<matrix32> 3.00357, -0, 0, 1.99027, -0.299378, 0.29938 </matrix32>
 				<resource  resource_type="Script" path="res://Pipe.gd">  </resource>
 				<dictionary  shared="false">
@@ -176,7 +176,7 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 				</dictionary>
 				<resource  resource_type="Texture" path="res://pipe.png">  </resource>
 				<int> 0 </int>
