@@ -1,46 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="3" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://splash.gd" type="Script"></ext_resource>
+<resource_file type="PackedScene" subresource_count="7" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
 	<ext_resource path="res://res/Holo.ogg" type="AudioStream"></ext_resource>
+	<ext_resource path="res://res/splash-bg.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/Start-hover.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/Start-pressed.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/Start.png" type="Texture"></ext_resource>
+	<ext_resource path="res://splash.gd" type="Script"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="58">
+			<string_array  len="71">
 				<string> "Node" </string>
 				<string> "_import_path" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
-				<string> "Button" </string>
+				<string> "Sprite" </string>
 				<string> "visibility/visible" </string>
 				<string> "visibility/opacity" </string>
 				<string> "visibility/self_opacity" </string>
 				<string> "visibility/behind_parent" </string>
-				<string> "margin/left" </string>
-				<string> "margin/top" </string>
-				<string> "margin/right" </string>
-				<string> "margin/bottom" </string>
-				<string> "focus_neighbour/left" </string>
-				<string> "focus_neighbour/top" </string>
-				<string> "focus_neighbour/right" </string>
-				<string> "focus_neighbour/bottom" </string>
-				<string> "focus/ignore_mouse" </string>
-				<string> "focus/stop_mouse" </string>
-				<string> "size_flags/horizontal" </string>
-				<string> "size_flags/vertical" </string>
-				<string> "size_flags/stretch_ratio" </string>
-				<string> "disabled" </string>
-				<string> "toggle_mode" </string>
-				<string> "click_on_press" </string>
-				<string> "text" </string>
-				<string> "icon" </string>
-				<string> "flat" </string>
-				<string> "clip_text" </string>
-				<string> "align" </string>
-				<string> "Camera2D" </string>
 				<string> "transform/pos" </string>
 				<string> "transform/rot" </string>
 				<string> "transform/scale" </string>
+				<string> "texture" </string>
 				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "Camera2D" </string>
 				<string> "rotating" </string>
 				<string> "current" </string>
 				<string> "smoothing" </string>
@@ -62,6 +55,30 @@
 				<string> "stream/volume_db" </string>
 				<string> "stream/autoplay" </string>
 				<string> "stream/paused" </string>
+				<string> "Button" </string>
+				<string> "TextureButton" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "focus_neighbour/left" </string>
+				<string> "focus_neighbour/top" </string>
+				<string> "focus_neighbour/right" </string>
+				<string> "focus_neighbour/bottom" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "size_flags/stretch_ratio" </string>
+				<string> "disabled" </string>
+				<string> "toggle_mode" </string>
+				<string> "click_on_press" </string>
+				<string> "textures/normal" </string>
+				<string> "textures/pressed" </string>
+				<string> "textures/hover" </string>
+				<string> "textures/disabled" </string>
+				<string> "textures/focused" </string>
+				<string> "textures/click_mask" </string>
 				<string> "_on_Button_pressed" </string>
 				<string> "pressed" </string>
 			</string_array>
@@ -70,9 +87,9 @@
 			<string> "conn_count" </string>
 			<int> 1 </int>
 			<string> "node_count" </string>
-			<int> 4 </int>
+			<int> 5 </int>
 			<string> "variants" </string>
-			<array  len="21" shared="false">
+			<array  len="28" shared="false">
 				<node_path> "" </node_path>
 				<resource  resource_type="Script" path="res://splash.gd">  </resource>
 				<dictionary  shared="false">
@@ -93,11 +110,11 @@
 							<string> "pixel_snap" </string>
 							<bool> False </bool>
 							<string> "zoom" </string>
-							<real> 0.142388 </real>
+							<real> 0.323516 </real>
 							<string> "use_snap" </string>
 							<bool> True </bool>
 							<string> "ofs" </string>
-							<vector2> -1312, -832 </vector2>
+							<vector2> -981.541, -656.489 </vector2>
 							<string> "snap" </string>
 							<int> 64 </int>
 						</dictionary>
@@ -186,30 +203,37 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 				</dictionary>
 				<bool> True </bool>
 				<real> 1 </real>
 				<bool> False </bool>
-				<real> 576 </real>
-				<real> 384 </real>
-				<real> 704 </real>
-				<real> 448 </real>
-				<int> 2 </int>
-				<string> "START" </string>
-				<resource name=""></resource>				<int> 1 </int>
-				<vector2> 0, 0 </vector2>
+				<vector2> 640, 400 </vector2>
 				<real> 0 </real>
 				<vector2> 1, 1 </vector2>
+				<resource  resource_type="Texture" path="res://res/splash-bg.png">  </resource>
+				<vector2> 0, 0 </vector2>
+				<int> 1 </int>
+				<int> 0 </int>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
 				<int> -10000000 </int>
 				<int> 10000000 </int>
 				<real> 0.2 </real>
 				<resource  resource_type="AudioStream" path="res://res/Holo.ogg">  </resource>
-			</array>
+				<real> 521 </real>
+				<real> 559 </real>
+				<real> 760 </real>
+				<real> 645 </real>
+				<int> 2 </int>
+				<resource  resource_type="Texture" path="res://res/Start.png">  </resource>
+				<resource  resource_type="Texture" path="res://res/Start-pressed.png">  </resource>
+				<resource  resource_type="Texture" path="res://res/Start-hover.png">  </resource>
+				<resource name=""></resource>			</array>
 			<string> "nodes" </string>
-			<int_array  len="146"> 				-1, -1, 0, 0, -1, 3, 1, 0, 2, 1, 3, 2, 0, 0, 0, 4, 4, -1, 26, 1, 0, 5, 3, 6, 4, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 9, 13, 0, 14, 0, 15, 0, 16, 0, 17, 5, 18, 3, 19, 10, 20, 10, 21, 4, 22, 5, 23, 5, 24, 5, 25, 11, 26, 12, 27, 5, 28, 5, 29, 13, 0, 0, 0, 30, 30, -1, 23, 1, 0, 5, 3, 6, 4, 7, 4, 8, 5, 31, 14, 32, 15, 33, 16, 34, 3, 35, 5, 36, 5, 37, 15, 38, 16, 39, 17, 40, 17, 41, 18, 42, 18, 43, 3, 44, 3, 45, 19, 46, 19, 47, 19, 48, 19, 0, 0, 0, 49, 49, -1, 7, 1, 0, 50, 20, 51, 5, 52, 3, 53, 15, 54, 3, 55, 5, 0 </int_array>
+			<int_array  len="193"> 				-1, -1, 0, 0, -1, 3, 1, 0, 2, 1, 3, 2, 0, 0, 0, 4, 4, -1, 19, 1, 0, 5, 3, 6, 4, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 9, 13, 3, 14, 10, 15, 5, 16, 5, 17, 11, 18, 11, 19, 12, 20, 13, 21, 5, 22, 14, 0, 0, 0, 23, 23, -1, 23, 1, 0, 5, 3, 6, 4, 7, 4, 8, 5, 9, 10, 10, 7, 11, 8, 13, 3, 24, 5, 25, 5, 26, 7, 27, 8, 28, 15, 29, 15, 30, 16, 31, 16, 32, 3, 33, 3, 34, 17, 35, 17, 36, 17, 37, 17, 0, 0, 0, 38, 38, -1, 7, 1, 0, 39, 18, 40, 5, 41, 3, 42, 7, 43, 3, 44, 5, 0, 0, 0, 46, 45, -1, 27, 1, 0, 5, 3, 6, 4, 7, 4, 8, 5, 47, 19, 48, 20, 49, 21, 50, 22, 51, 0, 52, 0, 53, 0, 54, 0, 55, 5, 56, 3, 57, 23, 58, 23, 59, 4, 60, 5, 61, 5, 62, 5, 63, 24, 64, 25, 65, 26, 66, 27, 67, 27, 68, 27, 0 </int_array>
 			<string> "conns" </string>
-			<int_array  len="6"> 				1, 0, 57, 56, 2, 0 </int_array>
+			<int_array  len="6"> 				4, 0, 70, 69, 2, 0 </int_array>
 		</dictionary>
 
 	</main_resource>
