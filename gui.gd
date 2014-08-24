@@ -44,7 +44,7 @@ func add_center(pos):
 func _ready():
 	#Globals.set("space_creditsLabel", 20)
 	# Initalization here
-	credits = 200
+	credits = 100
 	score = 0
 	
 	#turelsNode
