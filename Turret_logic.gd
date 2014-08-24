@@ -40,6 +40,8 @@ func _fixed_process(delta):
 			if(Targets.size()):
 				LockOnTarget = Targets[0]
 		else:
+			if(!(LockOnTarget extends homeless)):
+				return
 			cantshoot = cooldown
 			var VectorGun = get_pos()
 			var VectorBum = LockOnTarget.get_pos()
