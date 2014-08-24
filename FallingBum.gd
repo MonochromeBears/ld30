@@ -18,7 +18,8 @@ var anim=""
 
 var Pipe_Class = preload("res://Pipe.gd")
 
-
+const TIME = 5
+var time = 0
 func _integrate_forces(s):
 	for i in range(s.get_contact_count()):
 		var cc = s.get_contact_collider_object(i)
@@ -26,6 +27,11 @@ func _integrate_forces(s):
 		
 		if (cc):
 			if (cc extends Pipe_Class):
+				var new_time = OS.get_unix_time();
+				if (new_time - time >= TIME && time != 0):
+					queue_free()
+				elif (time == 0):
+					time = new_time
 				var Rcolor = cc.get_node("Sprite").get_modulate().g * 0.95
 				cc.get_node("Sprite").set_modulate(Color(255,Rcolor,Rcolor))
 				set_active(1)
