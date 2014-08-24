@@ -46,7 +46,8 @@ func _input( ev ):
 		startInputProcessing = false
 		object.hide()
 		Input.set_mouse_mode(0)
-		get_node("GUI").add_turel(ev.pos)
+		#var pos_x = ev.pos.x
+		get_node("GUI").add_turel(Vector2(round(ev.pos.x / 64) * 64, 600))
 	elif (ev.type==InputEvent.MOUSE_MOTION):
 #		print("Mouse Motion at: ",ev.pos)
 		object.set_pos(ev.pos)
