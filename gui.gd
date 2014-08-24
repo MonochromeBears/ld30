@@ -8,7 +8,6 @@ var crossButton
 var score
 var scoreLabel
 var turelsNode
-var lastTurelPos
 var turel_scene = preload("res://turel.xml")
 var reabilitation_scene = preload("res://reabilitation.xml")
 # member variables here, example:
@@ -16,25 +15,22 @@ var reabilitation_scene = preload("res://reabilitation.xml")
 # var b="textvar"
 
 
-func add_turel():
+func add_turel(pos):
 	if (credits >= -20):
 		credits = credits - 20
 		creditsLabel.set_text(str(credits))
-		draw_turel()
+		draw_turel(pos)
 		
 		
-func draw_turel():
+func draw_turel(pos):
 	var tr = turel_scene.instance()
-	tr.set_pos(Vector2(lastTurelPos, 0))
-	lastTurelPos += 64
+	tr.set_pos(pos)
 	turelsNode = add_child(tr)
-	
 	pass
 	
 func draw_center():
 	var dr = reabilitation_scene.instance()
-	dr.set_pos(Vector2(lastTurelPos, 0))
-	lastTurelPos += 64
+#	dr.set_pos(Vector2(lastTurelPos, 0))
 	turelsNode = add_child(dr)
 	
 	
@@ -52,8 +48,6 @@ func _ready():
 	
 	#turelsNode
 	turelsNode = get_node("Turels")
-	
-	lastTurelPos = 64
 	
 	#buttons
 	turelButton = get_node("VBoxContainer").get_node("AddTurelButton")
@@ -74,13 +68,7 @@ func _ready():
 	
 	
 func _on_turel_button_pressed():
-	add_turel()
-
-
-
-
-
-
+	get_parent().show_turret_control()
 
 func _on_AddCrossButton_pressed():
 	add_center()
