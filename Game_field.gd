@@ -5,6 +5,7 @@ extends Node
 # var b="textvar"
 
 var FallinBum = preload("res://FallingBum.xml")
+var FallinBoss = preload("res://Boss.xml")
 var DropWidth = 20*32 
 var SceneCenter = 20*32
 var RndArray = [-1,1]
@@ -19,18 +20,21 @@ func _ready():
 	get_node("game_over").hide()
 	pass
 
-func generate_obstacle():
+func generate_obstacle(type):
 	if (game_over):
 		return
-	var obst = FallinBum.instance()
+	var obst = type.instance()
 	var posX = SceneCenter + DropWidth * randf() * RndArray[randi() % 2]
-	var poxY = 0
+	var poxY = -300
 	obst.set_pos(Vector2(posX,poxY))
 	add_child(obst)
 
 func _fixed_process(delta):
 	if (randi()%100 < 4):
-		generate_obstacle()
+		generate_obstacle(FallinBum)
+		if (randi()%10 == 1):
+			generate_obstacle(FallinBoss)
+	
 	check_pipe()
 
 

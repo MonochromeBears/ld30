@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="14" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://res/Main-theme.ogg" type="AudioStream"></ext_resource>
 	<ext_resource path="res://Pipe.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://gui.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://res/reabilitation.png" type="Texture"></ext_resource>
 	<ext_resource path="res://res/pixel_font2.fnt" type="Font"></ext_resource>
 	<ext_resource path="res://res/hot-planet.png" type="Texture"></ext_resource>
-	<ext_resource path="res://res/reabilitation.png" type="Texture"></ext_resource>
-	<ext_resource path="res://res/pipe.png" type="Texture"></ext_resource>
-	<ext_resource path="res://gui.xml" type="PackedScene"></ext_resource>
 	<ext_resource path="res://res/gun.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/turel_platform.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/pipe.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/Main-theme.ogg" type="AudioStream"></ext_resource>
 	<ext_resource path="res://res/cold-planet.png" type="Texture"></ext_resource>
+	<ext_resource path="res://res/static_bg.png" type="Texture"></ext_resource>
 	<ext_resource path="res://tileset.res" type="TileSet"></ext_resource>
 	<ext_resource path="res://Game_field.gd" type="Script"></ext_resource>
-	<ext_resource path="res://res/static_bg.png" type="Texture"></ext_resource>
-	<ext_resource path="res://res/turel_platform.png" type="Texture"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
@@ -267,7 +267,7 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 				</dictionary>
 				<bool> True </bool>
 				<real> 1 </real>
