@@ -16,7 +16,7 @@ var reabilitation_scene = preload("res://reabilitation.xml")
 
 
 func add_turel(pos):
-	if (credits >= -20):
+	if (credits >= 100):
 		credits = credits - 100
 		creditsLabel.set_text(str(credits))
 		draw_turel(pos)
@@ -36,7 +36,7 @@ func draw_center(pos):
 	
 	
 func add_center(pos):
-	if (credits >= 100):
+	if (credits >= 20):
 		credits = credits - 20
 		creditsLabel.set_text(str(credits))
 		draw_center(pos)
@@ -44,7 +44,7 @@ func add_center(pos):
 func _ready():
 	#Globals.set("space_creditsLabel", 20)
 	# Initalization here
-	credits = 100
+	credits = 200
 	score = 0
 	
 	#turelsNode
